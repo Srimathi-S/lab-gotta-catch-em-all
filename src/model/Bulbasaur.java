@@ -14,10 +14,67 @@ package model;
 //Use the predefined values given below as constructor arguments 
 //pokemonName = Bulbasaur
 //pokemonNumber = 001
-//characteristics = "Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region."
+//characteristics = "Bulbasaur is a Grass/Poison-type Pokï¿½mon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokï¿½mon in the Kanto region."
 //type = "POISON"
 //evolution = "IVYSAUR"
 //baseExp = "64" 
+public class Bulbasaur extends Pokemon
+{
+	String characteristics; 
+	String type;
+	String evolution;
+	String baseExp;
+	
+	//Non paramerterised constructor that calls for parameterised constructor
+	
+	
+	public Bulbasaur(String pokemonName, int pokemonNumber, String characteristics, String type, String evolution,String baseExp) {
+		super(pokemonName, pokemonNumber);
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp = baseExp;
+	}
+	/*public Bulbasaur()
+	{
+		String Bulbasaurcharacteristics="Bulbasaur is a Grass/Poison-type Pokemon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokï¿½mon in the Kanto region.";
+		 Bulbasaur("Bulbasaur",001,Bulbasaurcharacteristics,"POISON","IVYSAUR","64" );
+	}*/
+	
+	//Getters and setters for characteristics
+	public String getCharacteristics() {
+		return characteristics;
+	}
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	
+	//Getters and setters for type
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	//Getters and setters for evolution
+	public String getEvolution() {
+		return evolution;
+	}
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	
+	//Getters and setters for base expression
+	public String getBaseExp() {
+		return baseExp;
+	}
+	public void setBaseExp(String baseExp) {
+		this.baseExp = baseExp;
+	}
+	
+	
+}
 
 
 
