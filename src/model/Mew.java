@@ -36,11 +36,7 @@ public class Mew extends Pokemon
 		this.evolution = evolution;
 		this.baseExp = baseExp;
 	}
-	/*public Bulbasaur()
-	{
-		String Bulbasaurcharacteristics="Bulbasaur is a Grass/Poison-type Pokemon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pok�mon in the Kanto region.";
-		 Bulbasaur("Bulbasaur",001,Bulbasaurcharacteristics,"POISON","IVYSAUR","64" );
-	}*/
+	
 	
 	//Getters and setters for characteristics
 	public String getCharacteristics() {
